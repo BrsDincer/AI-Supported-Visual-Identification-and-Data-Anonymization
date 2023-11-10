@@ -1,0 +1,57 @@
+from utils_class import CONFIGURATION
+from presidio_anonymizer.entities import OperatorConfig
+
+OPERATORGENERAL:CONFIGURATION = {
+    "DEFAULT":OperatorConfig(
+        "replace",
+        {"new_value":"-DETECTED_CONCERN-"}
+        ),
+    "PHONE_NUMBER":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_PHONENUMBER_RELATED-"}
+        ),
+    "TITLE":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_TITLE_RELATED-"}
+        ),
+    "EMAIL_ADDRESS":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_EMAIL_RELATED-"}
+        ),
+    "CREDIT_CARD":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_CREDITCARD_RELATED-"}
+        ),
+    "LOCATION":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_LOCATION_RELATED-"}
+        ),
+    "URL":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_URL_RELATED-"}
+        ),
+    "DATE_TIME":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_DATETIME_RELATED-"}
+        ),
+    "CRYPTO":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_CRYPTO_RELATED-"}
+        ),
+    "NRP":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_NRP_RELATED-"}
+        ),
+    "IBAN_CODE":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_IBAN_RELATED-"}
+        ),
+    "PERSON":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_PERSON_RELATED-"}
+        ),
+    "MEDICAL_LICENSE":OperatorConfig(
+        "replace",
+        {"new_value":"-MASKED_MEDICAL_RELATED-"}
+        )
+    }

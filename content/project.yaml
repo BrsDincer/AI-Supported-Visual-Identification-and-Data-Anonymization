@@ -1,0 +1,10 @@
+%YAML 1.1
+---
+
+project:
+    defination: "Data Anonymization and AI Process"
+    topic: "Agent - AI - AGI - Knowledge Retrieval - Presidio"
+    focus: "Detection - Anonymization - LLM - AGI"
+
+apikey:
+    OPENAI_API_KEY: "<YOUR_OPENAI_API_KEY_HERE>"
